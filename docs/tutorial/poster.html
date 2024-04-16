@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Building your own HTML poster — A tutorial on using this template to make your own posters</title>
+    <title>Bridging the Gap poster: Tianyi Kou-Herrema, CTLI Fellow</title>
     <link rel="stylesheet" href="poster.css">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
     <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
 
           <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+
           <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-    
+
     <style type="text/css">
   html { font-size: 1.15rem }
 </style>
@@ -22,15 +22,15 @@
           <a href="https://github.com/cpitclaudel/academic-poster-template"><img src="logo.svg" alt="Tutorial logo"></a>
       </aside>
       <div>
-        <h1 property="headline">Building your own HTML poster</h1>
-                  <h2 property="alternativeHeadline">A tutorial on using this template to make your own posters</h2>
+        <h1 property="headline">Bridging the Gap:</h1>
+                  <h2 property="alternativeHeadline">Unveiling the Need for AI Literacy in Higher Education through Student Insights and Fundamental Concepts</h2>
                 <address>
-              <a property="author">Clément Pit-Claudel<sup>a</sup></a>
-<br />  <sup>a</sup><a property="sourceOrganization">MIT CSAIL</a>
+              <a property="author">Tianyi Kou-Herrema</a>
+<br />  <a property="sourceOrganization">CTLI Fellow 2023-2024</a>
         </address>
         <span class="publication-info">
                       <span property="publisher">Unpublished</span>,
-            <time pubdate property="datePublished" datetime="2020-09-08">September 8, 2020</time>
+            <time pubdate property="datePublished" datetime="2024-04-15">April 15, 2024</time>
                   </span>
       </div>
       <aside>
@@ -40,166 +40,124 @@
 
     <main property="articleBody">
         <article property="abstract">
-        <header><h3>Abstract</h3></header>
+        <header><h3>Introduction</h3></header>
 
-    <p>Academic posters are usually designed using presentation software and distributed as images or PDFs.</p>
+    <p>When ChatGPT came out in November 2022, it made a big splash in the world of Artificial Intelligence. Since then, AI has become more and more part of classrooms. </p>
+    <p>Different schools have reacted in different ways. For example, Dr. Terwiesch from the Wharton School said that ChatGPT helped him spend less time on making tests, so he could spend more time helping students. On the other hand, the NYC Education Department stopped anyone in schools from using ChatGPT, worrying about potential misuse.</p>
 
-    <p>While PDFs are fine for printing posters, they are not particularly user-friendly: they are hard to read on small screens, don't support resizing text or increasing contrast, and often don't work nicely with screen readers.</p>
+    <p>In August 2023, MSU warned about being careful when using AI tools with sensitive or private information.</p>
 
-    <p>The recent shift to online conferences is a great opportunity to reconsider our poster-making tools, and it turns out that plain HTML5 + CSS works pretty well for making (more) accessible posters.</p>
+    <p>This project looks at how MSU students use AI for their studies and research. This project contains three components:</p>
+    <li>Interviews on AI with students at MSU</li>
+    <li>Basic Concepts Explained</li>
+    <li>A Proposed Course on AI Literacy</li>
 
-    <p>This template is released under a permissive license: all we ask if you use it for your own posters is that you leave a one-line comment in the HTML sources.</p>
   </article>
 
   <article>
-    <header><h3>Using this template</h3></header>
-    <p>There are two ways to use this template: directly editing the HTML, and using Jinja2 templates.</p>
-  </article>
-
-  <article>
-    <header><h3>Editing the HTML directly</h3></header>
-
-    <p>This is the simplest way to get started, since it just requires a text editor:</p>
-
+    <header><h3>Section 1.1 Interview Questions </h3></header>
     <ol>
-      <li>Download the <a href="https://github.com/cpitclaudel/academic-poster-template/releases/latest">latest release</a> of this template (or download the <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/tutorial/poster.html">webpage</a> and the corresponding <a href="https://raw.githubusercontent.com/cpitclaudel/academic-poster-template/main/docs/poster.css">stylesheet</a> directly from the <a href="https://github.com/cpitclaudel/academic-poster-template/tree/main/docs/tutorial/">repository</a>).</li>
-      <li>Adjust the metadata and add blocks to the <code>main</code> section.</li>
+      <li>When you think of "artificial intelligence" what ideas or feelings do you have?</li>
+      <li>Do you use any technology related to artificial intelligence? How do you use it?</li>
+      <li>What has Michigan State University provided regarding artificial intelligence? Can you remember any specific details?</li>
+      <li>If you have enough time, what parts of artificial intelligence would you like to learn?</li>
     </ol>
   </article>
 
   <article>
-    <header><h3>Using Jinja2</h3></header>
-
-    <p>The poster is a Jinja2 template, so you can inherit from it and fill in the relevant fields and the contents.</p>
-
-    <ol>
-      <li>Clone the <a href="https://github.com/cpitclaudel/academic-poster-template/">GitHub repository</a>.</li>
-      <li>Create your own jinja2 template, starting from <a href="https://github.com/cpitclaudel/academic-poster-template/tree/main/docs/tutorial.jinja2">this tutorial</a>.</li>
-      <li>Render to HTML using the <code>render.py</code> script:<br/>
-        <code>./render.py your_jinja2_poster.jinja output.html</code>
-      </li>
-    </ol>
-
-    <b>The template for this tutorial includes documentation for each variable and block.</b>
-  </article>
-
-  <article>
-    <header><h3>Poster layout</h3></header>
-
-    <p>Posters made using this template are composed of a sequence of blocks.  You can use CSS to customize the way the blocks are designed; by default they scroll left to right on wide screens and top to bottom on narrow screens.</p>
-
-    <b>Try resizing your browser to see how the poster's layout changes.</b>
-  </article>
-
-  <article>
-    <header><h3>Block template</h3></header>
-
-    <p>Each block has the following structure (fill in the italicized parts):</p>
-
-    <pre>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">article</a>&gt;
-  &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">header</a>&gt;&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h">h3</a>&gt;<i>Block title</i>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3">h3</a>&gt;&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">header</a>&gt;
-
-  <i>Block contents:
-    paragraphs (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p</a>&gt;),
-    figures (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;),
-    lists (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul</a>&gt;, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ol</a>&gt;),
-    images (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a>&gt;, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object">object</a>&gt;),
-    tables (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a>&gt;), …</i>
-&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">article</a>&gt;</pre>
-  </article>
-
-  <article>
-    <header><h3>Structural markup</h3></header>
-
-    <p>The following markup is useful to structure content blocks:</p>
-    <ul>
-      <li>
-        <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p</a>&gt;</code>
-        <p style="margin: 0">Paragraphs</p>
-        <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">p</a>&gt;</code>
-      </li>
-
-      <li>
-        <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul</a>&gt;</code>
-        <ul>
-          <li><code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">li</a>&gt;</code>…<code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">li</a>&gt;</code></li>
-        </ul>
-        <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul</a>&gt;</code> (Plain lists)
-      </li>
-
-      <li>
-        <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ol</a>&gt;</code>
-        <ol>
-          <li><code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">li</a>&gt;</code>…<code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">li</a>&gt;</code></li>
-        </ol>
-        <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ol</a>&gt;</code> (Numbered lists)
-      </li>
-
-      <li>
-        <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">b</a>&gt;</code>
-        <b>Call-outs (<i>alerts</i>)</b>
-        <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">b</a>&gt;</code>
-      </li>
-    </ul>
-  </article>
-
-  <article>
-    <header><h3>Inline markup</h3></header>
-      <ul>
-        <li>
-          <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">a</a> href="<var>url</var>"&gt;</code>
-          <a href="url">Links</a>
-          <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">a</a>&gt;</code>
-        </li>
-
-        <li>
-          <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">em</a>&gt;</code>
-          <em>Emphasized text</em>
-          <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">em</a>&gt;</code>
-        </li>
-
-        <li>
-          <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">strong</a>&gt;</code>
-          <strong>Important text</strong>
-          <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">strong</a>&gt;</code>
-        </li>
-
-        <li>
-          <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">i</a>&gt;</code>
-          <i>Scientific terms, foreign words</i>
-          <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">i</a>&gt;</code>
-        </li>
-
-        <li>
-          <code>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var">var</a>&gt;</code>
-          <var>Math variables, placeholders</var>
-          <code>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var">var</a>&gt;</code>
-        </li>
-      </ul>
-
-      <b>Not sure which one to use? Check out <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">Mozilla's explanations</a>.  Using appropriate markup helps screen readers a lot.</b>
-  </article>
-
-  <article>
-    <header><h3>Figures</h3></header>
-
-    <p>Use the following code to insert a figure:</p>
-
-    <pre>&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;
-  <i>Figure contents:
-    images (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img</a>&gt;, &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object">object</a>&gt;),
-    tables (&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">table</a>&gt;),
-    quotes, …</i>
-  &lt;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;<i>Figure caption</i>&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a>&gt;
-&lt;/<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure</a>&gt;</pre>
-
-    <hr/>
+    <header><h3>Section 1.2.1 Interviews Analysis Using Text Analysis Tools</h3></header>
 
     <figure>
-      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="An orange shield with a white 5 emblazoned on it and the letters HTML above it.">
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="word cloud visualization created based on the transcript. More frequent used words are ai, people, don't, think.">
 
-      <figcaption>The HTML5 logo (<i>Source: <a href="https://www.w3.org/html/logo/">W3C</a></i>)</figcaption>
+      <figcaption>A word cloud visualization based on the interview transcript</figcaption>
     </figure>
+
+    <p>This image gives us a first look at the conversation summaries: people mentioned topics like data, ChatGPT, learning, students (including graduate students), algorithms, ethics, and grammar. We’ll look more closely at some of these topics later.</p>
+
+    <figure>
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="Word distribution visualization across all interviewees. Five words are used: ai, people, chatgpt, eth*, teach.">
+
+      <figcaption>Word distribution visualization across all interviewees</figcaption>
+    </figure>
+
+    <p>It's obvious that 'ChatGPT' is a common term that almost everyone mentioned. Also, the idea of 'ethics'—sometimes called 'ethic,' 'ethically,' or 'ethical'—came up in nearly all the responses. We'll go into more detail about this in our thorough analysis of the conversations.</p>
+
+  </article>
+
+  <article>
+    <header><h3>Section 1.2.2 Interviews Analysis Using Qualitative Approach</h3></header>
+    <ol>
+      <li>When asked the first question, most people immediately thought of chatbots like ChatGPT. Two graduate students also mentioned more complex ideas like large language models, machine learning, and algorithms.</li>
+      <li>Four out of seven people we talked to said they use ChatGPT and Grammarly. One person mentioned he doesn't use ChatGPT but uses Grammarly when it's part of Word. Another person who doesn't use ChatGPT uses Amazon's Alexa every day. Most people think of ChatGPT and Grammarly when they think about AI tools. Two people mentioned they use ChatGPT and other unseen tools that operate similarly in the background.</li>
+      <li>People studying science, technology, engineering, and math (STEM) see more AI-related activities and hear about AI more often in classes, where it might be mentioned in brief or discussed in depth. However, students in social sciences and humanities don't encounter AI as much. One person noted a rule change in a class from being allowed to use AI for help to not allowing the use of AI tools at all.</li>
+      <li>Regarding what they want to learn about AI, six out of seven people we talked to were interested in the ethics of using AI. They were quite clear about this, saying things like "Ethics is very important," "I’m more interested in discussing AI and philosophy than learning how the technology works," "I think the ethical and social effects are important and useful to learn about," "It’s important to understand digital skills at all levels of university," and "Ethics comes first." They want to understand AI better to discuss and critique it effectively, especially as it evolves quickly.</li>
+    </ol>
+  </article>
+
+  <article>
+    <header><h3>Section 2.1 A Basic Concept</h3></header>
+    <h4>Natural Language Processing (NLP)</h4>
+    <figure>
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="A diagram created by Saxon AI on Natural Language Processing in AI. There are three circles, left one is called AI, upper right one is Computer Science, and lower right is Human Language. NLP stays in the middle of all three circles.">
+    </figure>
+
+    <p>NLP stands halfway between computer science computational linguistics, and it is dedicated to the conversion of written and spoken natural human languages into structured mineable data. Through the combination of linguistic, statistical and AI methods NLP can be used either to determine the meaning of a text or even to produce a human-like response (Fanni et al.).</p>
+  </article>
+
+  <article>
+    <header><h3>Section 2.2 Basic Concepts</h3></header>
+    <figure>
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" width="197" height="64" alt="A diagram of concentric circles representing a hierarchy within Artificial Intelligence concepts. The outermost circle is labeled 'Artificial Intelligence.' Nested within it is 'Machine Learning,' followed by 'Neural Networks,' then 'Deep Learning,' 'Generative AI,' and the innermost circle is 'Large Language Models.' Each term is enclosed within its own larger category, indicating that Large Language Models are a specific part of Generative AI, which is a type of Deep Learning, and so on, up to the broad field of Artificial Intelligence">
+    </figure>
+
+    <h4>Artificial Intelligence (AI):  A Field of Study</h4>
+    <p>A common definition of AI is that it is a technology that enables machines to imitate various complex human skills (Sheikh et al.).</p>
+      <hr/>
+    <h4>Machine Learning (ML): A Branch of AI</h4>
+    <p>Machine Learning refers to the methods and algorithms that enable AI systems to identify patterns, make decisions, and improve themselves through all sources of input data (Sun et al.).</p>
+      <hr/>
+    <h4>Neural Networks (NN): Subsets of ML</h4>
+    <p>Neural networks are inspired by the human brain, mimicking the way that biological neurons signal to one another (Caprasi).</p>
+      <hr/>
+    <h4>Deep Learning (DL): A subset of NN</h4>
+    <p>“Deep” refers to the depth of layers in a neural network (Caprasi).</p>
+      <hr/>
+    <h4>Generative Artificial Intelligence (GenAI): A Subset of DL</h4>
+    <p>Gen AI is a type of artificial intelligence technology that applies computational techniques, such as machine learning and deep learning, to generate seemingly new content in the forms of text, images, audio, and video from training data (Yu and Guo; Feuerriegel et al.).</p>
+      <hr/>
+    <h4>Large Language Models (LLMs): A Form of GenAI</h4>
+    <p>LLM focuses on generating human-like text based on the patterns learned from vast amounts of textual data during training process (Caprasi).</p>
+      <hr/>
+    <h4>GPT-3/3.5/4, BERT, Claude, Ernie, Falcon, Gemini, Llama</h4>
+    <p>These are all large language models.</p>
+  </article>
+
+  <article>
+    <header><h3>Section 3 Proposed Course</h3></header>
+    <b>Course Name: AI and Data Literacy: From Foundations to Societal Impact</b>
+    <ol>
+      <li>This <a href="https://drive.google.com/file/d/1tIooBl7iKewvpH8a_fmLDwUIGHw5MxKx/view?usp=sharing">link</a> will take you to a pdf file which contains the course description.</li>
+      <li>If you are using a screen-reader, please use this <a href="https://docs.google.com/document/d/1-ZRZbGRhhzF21wyBYP6SMEP9-r5qm3wwh-S1Bv3NMAI/edit?usp=sharing">link</a> to view the course description.</li>
+    </ol>
+
+  </article>
+
+  <article>
+    <header><h3>References</h3></header>
+    <ol>
+      <li>Baidoo-anu, David, and Leticia Owusu Ansah. “Education in the Era of Generative Artificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in Promoting Teaching and Learning.” Journal of AI, vol. 7, no. 1, 1, Dec. 2023, pp. 52–62.</li>
+      <li>Caprasi, Chiara. “Artificial Intelligence, Machine Learning , Deep Learning & Generative AI and More.” Women in Technology, 24 July 2023, <a href="https://medium.com/womenintechnology/ai-c3412c5aa0ac" target="_blank">view article</a>.</li>
+      <li>Fanni, Salvatore Claudio, et al. “Natural Language Processing.” Introduction to Artificial Intelligence, edited by Michail E. Klontzas et al., Springer International Publishing, 2023, pp. 87–99.</li>
+      <li>Feuerriegel, Stefan, et al. “Generative AI.” Business & Information Systems Engineering, vol. 66, no. 1, Feb. 2024, pp. 111–26.</li>
+      <li>Rospigliosi, Pericles ‘asher.’ “Artificial Intelligence in Teaching and Learning: What Questions Should We Ask of ChatGPT?” Interactive Learning Environments, vol. 31, no. 1, Jan. 2023, pp. 1–3.</li>
+      <li>Sheikh, Haroon, et al. “Artificial Intelligence: Definition and Background.” Mission AI: The New System Technology, edited by Haroon Sheikh et al., Springer International Publishing, 2023, pp. 15–41.</li>
+      <li>Sun, Kai, et al. “Artificial Intelligence and Machine Learning: Definition of Terms and Current Concepts in Critical Care Research.” Journal of Critical Care, vol. 82, Aug. 2024, p. 154792.</li>
+      <li>Walter, Yoshija. “The Future of Artificial Intelligence Will Be ‘Next to Normal’—A Perspective on Future Directions and the Psychology of AI Safety Concerns.” Nature Anthropology, vol. 2, no. 1, 1, Jan. 2024, p. 10001.</li>
+      <li>Woo, Melissa. “New University Guidance on Generative AI Use.” Technology at MSU, 1 Aug. 2023, <a href="https://tech.msu.edu/news/2023/08/new-university-guidance-on-generative-ai-use/" target="_blank">view statement</a>.</li>
+      <li>Yu, Hao, and Yunyun Guo. “Generative Artificial Intelligence Empowers Educational Reform: Current Status, Issues, and Prospects.” Frontiers in Education, vol. 8, June 2023.</li>
+    </ol>
+    <p>*Results in Section 1.2.1 were generated using <a href="https://voyant-tools.org/" target="_blank">Voyant Tools</a>. Voyant Tools is an open-source project, and the code is available on <a href="https://github.com/voyanttools" target="_blank">GitHub</a>.</p>
   </article>
 
   <article>
@@ -218,56 +176,16 @@
     </p>
   </article>
 
-  <article>
-    <header><h3>Mathematics</h3></header>
-
-    <p>This poster template loads <a href="https://www.mathjax.org/">MathJax</a> by default, so you can include inline math in backslash-parentheses <code>\( … \)</code> and display math in backslash-brackets <code>\[ … \]</code>:</p>
-
-    <p class="center">\((\lambda x. e) v \downarrow e[x/v]\) (β-reduction)</p>
-
-    \[\frac
-      {\langle \mathtt{expr}, s\rangle \Downarrow v}
-      {\langle \mathtt{var := expr}, s\rangle \downarrow s\left[\mathtt{var} \leftarrow v\right]}
-     \small{\text{Assign}}\]
-
-    <p>Using MathJax allows users of assistive technology to browse the equations.</p>
-  </article>
-
-  <article>
-    <header><h3>Additional styling</h3></header>
-
-    <p>The template's stylesheet defines a few extra CSS classes:</p>
-
-    <p class="boxed center"><code>.center</code><br/>
-      (horizontally centered text)</p>
-
-    <p class="boxed justify-center"><code>.justify-center</code><br/>
-      (horizontally centered block)</p>
-
-    <div class="boxed center">
-      <div class="center columns" style="height: 3em">
-        <code style="align-self: start">.columns-top</code>
-        <code style="align-self: center">.columns-center</code>
-        <code style="align-self: end">.columns-bottom</code>
-      </div>
-      <span>(columns)</span>
-    </div>
-
-    <small>To customize column widths, use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"><code>grid-template-columns</code></a>; for example, for 40%/60% widths, use the following snippet:
-      <pre class="center">style="grid-template-columns: 40fr 60fr"</pre>
-    </small>
-  </article>
-
   <figure style="flex-grow: 9999999">
     <img style="width: 70%" src="logo.svg" alt="Project logo" />
-    <figcaption>A stand-alone figure to fill the remaining space.</figcaption>
+    <figcaption>All feedback is welcome. Thank you for viewing my poster!</figcaption>
   </figure>
     </main>
 
     <footer>
       <address class="monospace">  <a href="https://github.com/cpitclaudel/academic-poster-template">https://github.com/cpitclaudel/academic-poster-template</a>
 </address>
-      <address class="monospace">  clement.pitclaudel@live.com
+      <address class="monospace">  koutiany@msu.edu
 </address>
                     <span class="credits">
           Based on an <a href="https://github.com/cpitclaudel/academic-poster-template">open poster template</a>.
