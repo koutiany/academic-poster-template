@@ -1,6 +1,7 @@
 ==========================================================
  A template for (more) accessible posters, using HTML+CSS
 ==========================================================
+*** I used this template to build a more accessible poster during my fellowship at the CTLI 2023-2024.
 
 Modern HTML+CSS is more than enough for most academic posters:
 
