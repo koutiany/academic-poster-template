@@ -4,7 +4,7 @@
 *** I used this template to build a more accessible poster during my fellowship at the CTLI 2023-2024.
 View the completed poster titled "Bridging the Gap: Unveiling the Need for AI Literacy in Higher Education through Student Insights and Fundamental Concepts" at https://koutiany.github.io/ctli-aiposter/tutorial/poster.html
 
-Notes from the creater
+Notes from the creator
 
 Modern HTML+CSS is more than enough for most academic posters:
 
